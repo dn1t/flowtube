@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Setup Deno
-        uses: denoland/setup-deno@1
+        uses: denoland/setup-deno@v1
         with:
           deno-version: vx.x.x
 
