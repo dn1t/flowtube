@@ -8,11 +8,13 @@ jobs:
     permissions:
       id-token: write # Needed for auth with Deno Deploy
       contents: read # Needed to clone the repository
-    uses: denoland/setup-deno@1
-    with:
-      deno-version: vx.x.x
 
     steps:
+      - name: Setup Deno
+        uses: denoland/setup-deno@1
+        with:
+          deno-version: vx.x.x
+
       - name: Clone repository
         uses: actions/checkout@v3
 
